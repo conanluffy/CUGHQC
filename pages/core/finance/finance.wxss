@@ -1,0 +1,66 @@
+.container {
+  background-color: #e5e5e5;
+  color: balck;
+  font-size: 8pt;
+  margin: 0;
+}
+
+.content-bd {
+  margin: 20rpx 0;
+  background-color: #fff;
+}
+#xueza .left{
+  width:200rpx;
+}
+#xueza .middle1,#xueza .middle,#xueza .right{
+  width: 180rpx;
+}
+#award .left{
+  width:320rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#award .middle1,#award .middle,#award .right{
+  width: 120rpx;
+}
+#award .middle{
+  width: 180rpx;
+}
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: 11pt;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid gray;
+  color: #7acfa6;
+  font-weight: bold;
+}
+
+.content-hd, .content-book {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx 0;
+  align-items: center;
+  margin: 0 15rpx;
+}
+
+.content-book {
+  border-top: 1rpx dotted gray;
+}
+
+/*.left {
+  width: 430rpx;
+  
+}
+
+.middle, .right {
+  width: 150rpx;
+  text-align: left;
+}
+
+.middle {
+  margin-left: 10rpx;
+}*/

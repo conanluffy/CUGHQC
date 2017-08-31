@@ -1,0 +1,61 @@
+<block wx:if="{{is_bind}}">
+  <navigator url="me/me" class="user-info">
+    <view class="info-hd">
+        <image class="user-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <view class="user-title">
+          <text class="user-name">{{userData.username}}</text>
+          <text class="user-id">{{userData.userid}}</text>
+        </view>
+        <text class="bind-btn">个人信息</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="/icon/enter.png"></image>
+        </view>
+    </view>
+  </navigator>
+</block>
+<block wx:else>
+  <navigator url="login/login" class="user-info">
+    <view class="info-hd">
+        <image class="user-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <view class="user-title">
+          <text class="user-name">{{userInfo.nickName}}</text>
+          <text class="user-id">未绑定</text>
+        </view>
+        <text class="bind-btn">前往绑定</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="/icon/enter.png"></image>
+        </view>
+    </view>
+  </navigator>
+</block>
+<navigator url="issues/issues" class="issue-link">
+  <view class="more-btn">
+    <image class="btn-icon" src="/icon/issue.png"></image>
+    <text class="btn-text">反馈</text>
+    <view class="btn-open">
+      <image class="btn-enter" src="/icon/enter.png"></image>
+    </view>
+  </view>
+</navigator>
+<navigator url="about/about" class="about-link">
+  <view class="more-btn">
+        <image class="btn-icon" src="/icon/about.png"></image>
+        <text class="btn-text">关于</text>
+        <view class="btn-open">
+            <image class="btn-enter" src="/icon/enter.png"></image>
+        </view>
+  </view>
+</navigator>
+<navigator url="set/set" class="set-link">
+  <view class="more-btn">
+        <image class="btn-icon" src="/icon/set.png"></image>
+        <text class="btn-text">设置</text>
+        <view class="btn-open">
+            <image class="btn-enter" src="/icon/enter.png"></image>
+        </view>
+  </view>
+</navigator>
+<navigator url="login/login" class="login-btn">
+    <text wx:if="{{is_bind}}">切换绑定</text>
+    <text wx:else>立即绑定</text>
+</navigator>

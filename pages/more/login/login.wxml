@@ -1,0 +1,52 @@
+<!--login.wxml-->
+<view class="container">
+    <view class="content">
+      <view class="hd">
+        <image class="logo" src="/icon/logo.png"></image>
+      </view>
+      <view class="bd">
+        <form class="login-form">
+          <view class="input-userid input-group">
+            <text class="input-label">帐号</text>
+            <input type="number" cursor-spacing="30" id="userid" maxlength="11" placeholder="请输入学号" bindinput="useridInput" />
+          </view>
+          <view class="input-passwd input-group">
+            <text class="input-label">密码</text>
+            <input password="true" cursor-spacing="30" id="passwd" placeholder="初始密码为学号" bindinput="passwdInput" />
+          </view>
+          <view class="login-help" bindtap="showHelp">
+            <text>帮助</text>
+            <image class="login-help-img" src="/icon/help.png"></image>
+          </view>
+        </form>
+        <view class="confirm-btn" bindtap="bind">
+            <text>确认绑定</text>
+        </view>
+        <view class="confirm-btn confirm-btn2" bindtap="bind2">
+            <text>使用体验账号</text>
+        </view>
+      </view>
+
+      <view class="help" id="help" wx:if="{{help_status}}" bindtap="tapHelp">
+        <view class="box">
+          <view class="box-hd">
+            <text class="box-title">帮助</text>
+            <image class="box-close" src="/icon/close.png" bindtap="hideHelp"></image>
+          </view>
+          <view class="box-bd">
+            <view class="help-q">1、账号和密码是什么？</view>
+            <view class="help-a">
+              <text>由于此小程序为毕业设计所做，数据均为模拟所得，并没有全校学生的数据，只提供测试账号</text>
+            </view>
+            <view class="help-q">2、以下为测试账号，密码与账号相同</view>
+            <view class="help-a">
+              <text>①20131004440</text>
+              <text>②20141002400</text>
+              <text>③20151000362</text>
+              <text>④20161001122</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

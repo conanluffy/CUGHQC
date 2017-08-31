@@ -1,0 +1,55 @@
+<view class="container">
+
+  <view class="ykt-card">
+    <view class="ykt-black-line"></view>
+    <view class="ykt-content">
+      <view class="ykt-ye">
+        <text class="ykt-ye-name">余额</text>
+        <view class="ykt-ye-money">
+          <text class="ykt-ye-value">{{balance}}</text>元
+        </view>
+      </view>
+      <view class="ykt-img">
+        <image src="/icon/card-bg.png"></image>
+      </view>
+    </view>
+    <view class="ykt-card-more">
+      <text class="ykt-ye-time">截至时间：{{time}}</text>
+      <text class="ykt-ye-id">卡号：{{userid}}</text>
+    </view>
+  </view>
+
+  <text class="grid-remind">近期交易情况：</text>
+  <view class="ykt-detail-wraper" wx:for="{{card}}">
+    <view class="ykt-head">
+      <text class="ykt-type-name">交易详情</text>
+    </view>
+    <view class="detail-list">
+      <view class="detail-item">
+        <text class="detail-item-label">交易时间</text>
+        <text class="detail-item-value">{{item.time}}</text>
+      </view>
+      <view class="detail-item">
+        <text class="detail-item-label">姓名</text>
+        <text class="detail-item-value">{{item.name}}</text>
+      </view>
+      <view class="detail-item">
+        <text class="detail-item-label">交易类型</text>
+        <text class="detail-item-value">{{item.kind}}</text>
+      </view>
+      <view class="detail-item">
+        <text class="detail-item-label">商户名称</text>
+        <text class="detail-item-value">{{item.where}}</text>
+      </view>
+      <view class="detail-item">
+        <text class="detail-item-label">交易金额</text>
+        <text class="detail-item-value">{{item.e_used}}元</text>
+      </view>
+      <view class="detail-item">
+        <text class="detail-item-label">交易余额</text>
+        <text class="detail-item-value">{{item.e_remind}}元</text>
+      </view>
+    </view>
+  </view>
+
+</view>

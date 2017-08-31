@@ -1,0 +1,22 @@
+page{
+    background-color: #f6f6f6;
+    padding: 0px;
+}
+.netInfo {
+    width: 100%;
+    background-color: #ffffff;
+    margin-bottom:100rpx;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.netInfo view {
+    height: 40px;
+    font-size: 11pt;
+    line-height: 40px;
+    margin: 0rpx 30rpx;
+    border-bottom: 1px solid #e5e5e5;
+}
+.netInfo view text {
+    float: right;
+    color: gray;
+}

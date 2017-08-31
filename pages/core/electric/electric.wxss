@@ -1,0 +1,157 @@
+/**sdf.wxss**/
+page{
+  background: #fff;
+}
+.container {
+  box-sizing: border-box;
+  padding: 30rpx;
+  background: #fefefe;
+}
+
+.remind-btn {
+  background-color: #ffcb63;
+  border-color: #e0b358;
+}
+
+.changeRoom {
+  border: 1rpx dotted #e5e5e5;
+  position: relative;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 30rpx;
+  font-size: 12pt;
+}
+
+#room {
+  width: 200rpx;
+  position: absolute;
+  left: 180rpx;
+  top: 15rpx;
+  margin-right: 20rpx;
+  font-size: 11pt;
+}
+
+.result-page {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  font-size: 11pt;
+}
+
+.result-model {
+  display: flex;
+  flex-flow: column;
+  border-radius: 3px;
+  color: #666;
+  background-color: #faf9f7;
+  overflow: hidden;
+}
+
+.result-userInfo {
+  display: flex;
+  align-items: stretch;
+  padding: 35rpx 30rpx;
+}
+
+.userInfo-dormitory {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10rpx 0 20rpx;
+}
+
+.dormitory-info {
+  font-size: 50rpx;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+
+.dormitory-resetBtn {
+  font-size: 28rpx;
+  padding: 5rpx 20rpx;
+  text-align: center;
+  background-color: #ffcb63;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.userInfo-basic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #888;
+}
+
+.basic-name {
+  font-size: 30rpx;
+  line-height: 150%;
+}
+
+.basic-time {
+  font-size: 26rpx;
+}
+
+.result-chargeInfo {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0;
+}
+
+.chargeInfo-model {
+  flex: 1;
+  padding: 35rpx 30rpx;
+}
+
+.chargeInfo-num {
+  margin-right: 10rpx;
+}
+
+.chargeInfo-cost {
+  margin-left: 10rpx;
+}
+
+.chargeInfo-model-title {
+  margin-bottom: 30rpx;
+}
+
+.chargeInfo-model-info {
+  text-align: center;
+}
+
+.model-info {
+  color: #777;
+  font-weight: bold;
+  font-size: 80rpx;
+  line-height: 120%;
+  padding: 0 15rpx 0 20rpx;
+}
+
+.result-specificInfo {
+  padding: 35rpx 30rpx;
+}
+
+.specificInfo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 25rpx 0;
+}
+
+.specificInfo-item-label {
+  flex: 1;
+}
+
+.specificInfo-item-value {
+  color: #888;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-right: 10rpx;
+}
+
+.sdf-bg {
+  position: fixed;
+  width: 750rpx;
+  height: 90rpx;
+  bottom: -2rpx;
+  left: 0;
+  right: 0;
+}

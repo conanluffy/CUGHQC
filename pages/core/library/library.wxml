@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="top">借阅证号：{{userid}}</view>
+  <view class="content">
+    <view class="content-bd" wx:if="{{!nobook}}">
+      <view class="title">当前借阅 {{tobooks.length}}本</view>
+      <view class="content-hd">
+        <view class="left">书名</view>
+        <view class="middle">借阅日期</view>
+        <view class="right">应还日期</view>
+      </view>
+      <view class="content-book" wx:for="{{tobooks}}">
+        <view class="left">{{item.name}}</view>
+        <view class="middle">{{item.begin_date}}</view>
+        <view class="right">{{item.end_date}}</view>
+      </view>
+    </view>
+    <view class="content-bd">
+      <view class="title">历史借阅 {{books.length}}本</view>
+      <view class="content-hd">
+        <view class="left">书名</view>
+        <view class="middle">借阅日期</view>
+        <view class="right">归还日期</view>
+      </view>
+      <view class="content-book" wx:for="{{books}}">
+        <view class="left">{{item.name}}</view>
+        <view class="middle">{{item.begin_date}}</view>
+        <view class="right">{{item.end_date}}</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<view class="netInfo">
+    <view class="userid">网络账号<text>{{net.userid}}</text></view>
+    <view class="flow_used">已用流量<text>{{net.flow_used}}G</text></view>
+    <view class="e_remind">账户余额<text>{{net.e_remind}}元</text></view>
+    <view class="e_owned">欠费金额<text>{{net.e_owned}}元</text></view>
+    <view class="kind">计费套餐<text>{{net.kind}}</text></view>
+    <view class="date">开户时间<text>{{net.date}}</text></view>
+    <view class="max_link" style="border: none;">最大连接数<text>{{net.max_link}}</text></view>
+</view>

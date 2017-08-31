@@ -1,0 +1,95 @@
+/* pages/more/more.wxss */
+page{
+    background-color: #f6f6f6;
+    padding: 0px;
+}
+.user-info, .more-btn {
+  background-color: #fff;
+  min-height: 80rpx;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.btn-enter {
+  width: 18rpx;
+  height: 27rpx;
+}
+
+/**user-info**/
+.user-info{
+  position: relative;
+  margin: 30rpx 0 50rpx;
+  height: 198rpx;
+}
+
+.user-avatar {
+  position: absolute;
+  left:30rpx;
+  top: 20rpx;
+  bottom: 20rpx;
+  width: 158rpx;
+  height: 158rpx;
+  border-radius: 50%;
+}
+.user-title{
+  position: absolute;
+  top: 40rpx;
+  left: 208rpx;
+  display: flex;
+  flex-direction: column;
+}
+.user-name {
+  color: #000;
+  font-size: 16pt;
+  line-height: 150%;
+  letter-spacing: 2rpx;
+}
+.user-id{
+  font-size: 11pt;
+  color: #8b8b8b;
+}
+.bind-btn {
+  color: #aaa;
+  position: absolute;
+  top: 67rpx;
+  right: 53rpx;
+}
+.user-info .btn-open {
+  position: absolute;
+  top: 70rpx;
+  right: 30rpx;
+}
+
+/**issues-link,about-link**/
+.issue-link, .about-link, .set-link {
+  margin-bottom: 20rpx;
+}
+.more-btn {
+  display: flex;
+  align-items: center;
+  font-size: 13pt;
+  padding: 0 30rpx;
+}
+.btn-icon {
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 15rpx;
+}
+.set-link  .btn-icon {
+  width:38rpx;
+  height:38rpx;
+  margin-left:3rpx;
+}
+.btn-text {
+  flex: 1;
+}
+
+.login-btn {
+  font-size: 13pt;
+  line-height: 85rpx;
+  height: 85rpx;
+  background: #e55c5c;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin: 40rpx 3%;
+}

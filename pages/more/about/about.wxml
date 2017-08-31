@@ -1,0 +1,35 @@
+<view class="classname">
+  <view class="header">
+    <image class="logo" src="/icon/logo.png"></image>
+    <view class="name">CUGHQC v1.0</view>
+  </view>
+  <view class="content">
+    <view class="nav">
+      <text class="nav-left">CUGHQC微信小程序</text>
+      <text class="nav-right">简介</text>
+    </view>
+    <view class="describe">
+      <view class="des-list">
+        <view>
+          <text class="list-left">开发者</text><text class="list-right">何庆澄</text>
+        </view>
+        <view>
+          <text class="list-left">个人网站</text><text class="list-right">http://conanluffy.cn</text>
+        </view>
+        <view>
+          <text class="list-left">GitHub</text><text class="list-right">https://github.com/conanluffy</text>
+        </view>
+      </view>
+      <view>
+        <view class="des-content">“CUGHQC”是一款微信小程序，由计算机学院2017届毕业生何庆澄独立开发，此微信小程序部分参照“地大校园应用”、“We重邮”的设计，在此特别致谢两个微信小程序的开发人员。</view>
+        <view class="des-content">此小程序仅为何庆澄同学作为毕业设计所用，但同时最大程度针对中国地质大学（武汉）在校本科生的学习生活各方面所设计。</view>
+        <view class="des-content">主要的功能包括教务系统、后勤服务、校园资讯在内的三大类，课程表、成绩查询、考试安排、图书馆、校园卡、校园网、电费查询、财务信息、学校通知、地大新闻、招聘信息等十几个小类，攘括了一个地大本科生大学四年在校期间的学习生活各个方面。</view>
+        <view class="des-content">由于权限及安全方面的问题，此小程序无法获得在校本科生的个人信息，小程序中所涉及的数据均为模拟数据。</view>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <text>Copyright @ 2017 conanluffy.</text>
+    <text>All Rights Reserved.</text>
+  </view>
+</view>

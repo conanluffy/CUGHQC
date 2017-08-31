@@ -1,0 +1,38 @@
+<view class="container">
+
+  <view class="ks-header">
+    <view class="ks-text">
+      <text class="ks-header-title">成绩查询</text>
+      <text class="ks-header-info">学号：{{userid}}</text>
+      <text class="ks-header-info">姓名：{{name}}</text>
+    </view>
+    <image class="ks-bg" src="/icon/grade.png"></image>
+  </view>
+
+  <view class="ks-class-ctn">
+    <view class="ks-class-item" wx:for="{{grades}}">
+      <view class="ks-hd">
+        <view class="ks-name">{{item.name}}</view>
+      </view>
+      <view class="ks-detail">
+        <view class="ks-detail-item">
+          <text class="ks-detail-label">性质</text>
+          <text class="ks-detail-content">{{item.kind}}</text>
+        </view>
+        <view class="ks-detail-item">
+          <text class="ks-detail-label">学分</text>
+          <text class="ks-detail-content">{{item.credit}}</text>
+        </view>
+        <view class="ks-detail-item">
+          <text class="ks-detail-label">成绩</text>
+          <text class="ks-detail-content">{{item.grade}}</text>
+        </view>
+        <view class="ks-detail-item">
+          <text class="ks-detail-label">绩点</text>
+          <text class="ks-detail-content">{{item.KCJD}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

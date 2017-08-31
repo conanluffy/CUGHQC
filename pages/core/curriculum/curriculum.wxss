@@ -1,0 +1,62 @@
+/* pages/indexPages/student/curriculum/curriculum.wxss */
+page{
+    background: #e5e5e5;
+    font-size: 9pt;
+}
+.top{
+    height: 100rpx;
+    background-color: #fff;
+}
+.picker{
+    position: absolute;
+    top:26rpx;
+    left: 40rpx;
+}
+.select_block{
+    width: 650rpx;
+    color: #73b4ef;
+    font-size: 11pt;
+    text-align: center;
+}
+.y{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.y .x{
+    display: flex;
+    flex-direction: column;
+}
+.content {
+  width:120rpx;
+  height: 220rpx;
+  border: 1px solid #fff;
+  border-radius: 15rpx;
+}
+.y1 .content{
+  height: 100rpx;
+  background-color: #def6fc;
+  border-radius: 5rpx;
+}
+.x1 .content{
+  width:60rpx;
+  background-color: #def6fc;
+  border-radius: 5rpx;
+}
+.x1 .view,.x1 .view2,.y1 .view,.y1 .view2 {
+  text-align: center;
+  line-height: 110rpx;
+  font-size: 12pt;
+}
+.y1 .view{
+  line-height: 60rpx;
+  font-weight: bold;
+  font-size: 12pt;
+}
+.y1 .view2{
+  line-height: 40rpx;
+  font-size: 10pt;
+}
+.view {
+  text-align: center;
+}

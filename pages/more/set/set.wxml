@@ -1,0 +1,3 @@
+<button bindtap="clearStorage">清除所有缓存</button>
+<button bindtap="clearStorage">清除课程信息缓存</button>
+<button bindtap="clearStorage">清除所有密码</button>

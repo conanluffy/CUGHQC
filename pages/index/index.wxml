@@ -1,0 +1,153 @@
+<!--功能导航-->
+<view class="nav">
+  <block wx:for="{{student}}">
+    <navigator url="{{item.src}}" class="item" hover-class="navHoverClass" hover-stay-time="200">
+      <image src="{{item.icon}}"></image>
+      <text>{{item.title}}</text>
+    </navigator>
+  </block>
+</view>
+
+<!--卡片列表-->
+<view class="main-card">
+
+  <!--今日课表-->
+  <view class="main-card-item" id="kb">
+    <view class="card-item-hd">
+      <image class="card-item-icon" src="/icon/curriculum.png"></image>
+      <text class="card-item-name">今日课表</text>
+      <text class="today">{{time}}</text>
+    </view>
+    <view class="daychange">
+      <view class="daychange-item {{theday.yesterday}}" id="yesterday" bindtap="theDay">昨天</view>
+      <view class="daychange-item {{theday.today}}" id="today" style="left:33%" bindtap="theDay">今天</view>
+      <view class="daychange-item {{theday.tomorrow}}" id="tomorrow" style="left:66%" bindtap="theDay">明天</view>
+    </view>
+    <view wx:if="{{noclass}}" class="card-item-bd kb-nothing">
+      <text>今天居然没有课~😆</text>
+    </view>
+    <view wx:else class="card-item-bd">
+      <view class="kb-item" wx:for="{{thedayClasses}}" wx:key="begin_part">
+        <text class="kb-item-when">{{item.begin_part}}-{{item.end_part}}</text>
+        <view class="kb-item-right">
+          <view class="kb-item-what">{{item.name}}</view>
+          <view class="kb-item-where">{{item.room}} {{item.teacher}}</view>
+        </view>
+      </view>
+    </view>
+    <navigator url="/pages/core/curriculum/curriculum">
+      <view class="card-item-open">
+        <text>查看完整课表</text>
+      </view>
+    </navigator>
+  </view>
+
+  <!--借阅信息-->
+  <view class="main-card-item" id="jy">
+    <view class="card-item-hd">
+      <image class="card-item-icon" src="/icon/library.png"></image>
+      <text class="card-item-name">借阅信息</text>
+    </view>
+    <view class="header">
+      <text class="left">当前借阅</text>
+      <text class="right">应还日期</text>
+    </view>
+    <view wx:if="{{nobook}}" class="card-item-bd kb-nothing">
+      <text>全部图书都还啦~😆</text>
+    </view>
+    <view wx:else class="jy-item-bd">
+      <view class="jy-item" wx:for="{{books}}" wx:key="begin_date">
+        <text class="jy-item-left">{{item.name}}</text>
+        <text class="jy-item-right">{{item.end_date}}</text>
+      </view>
+    </view>
+    <navigator url="/pages/core/library/library">
+      <view class="card-item-open">
+        <text>查看详情</text>
+      </view>
+    </navigator>
+  </view>
+
+  <!--校园卡-->
+  <view class="main-card-item" id="ykt">
+
+    <view class="card-item-hd">
+      <image class="card-item-icon" src="/icon/campusCard.png"></image>
+      <text class="card-item-name">一卡通</text>
+    </view>
+    <view class="card-item-bd">
+      <view class="card-info-hd">
+        <view class="card-info-left">
+          <text class="ykt-title">余额：</text>
+        </view>
+        <view class="card-info-right">
+          <view>截至时间：{{year}}/{{month}}/{{date}}</view>
+        </view>
+      </view>
+      <view class="ykt-balance">
+        <text class="ykt-balance-value">{{card.balance}}</text>
+        <text class="ykt-balance-text">元</text>
+      </view>
+    </view>
+    <navigator url="/pages/core/campusCard/campusCard">
+      <view class="card-item-open">
+        <text>查看详情</text>
+      </view>
+    </navigator>
+  </view>
+
+  <!--校园网-->
+  <view class="main-card-item" id="jy">
+    <view class="card-item-hd">
+      <image class="card-item-icon" src="/icon/campusNetwork.png"></image>
+      <text class="card-item-name">校园网</text>
+    </view>
+    <view class="card-item-bd">
+      <view class="card-info-hd">
+        <view class="card-info-left">
+          <text class="ykt-title">已用流量：</text>
+        </view>
+        <view class="card-info-right">
+          <view>截至时间：{{year}}/{{month}}/{{date}}</view>
+        </view>
+      </view>
+      <view class="ykt-balance">
+        <text class="ykt-balance-value">{{net.flow_used}}</text>
+        <text class="ykt-balance-text">G</text>
+      </view>
+    </view>
+    <navigator url="/pages/core/net/net">
+      <view class="card-item-open">
+        <text>查看详情</text>
+      </view>
+    </navigator>
+  </view>
+
+  <!--水电费-->
+  <view class="main-card-item" id="sdf">
+    <view class="card-item-hd">
+      <image class="card-item-icon" src="/icon/electric.png"></image>
+      <text class="card-item-name">电费查询</text>
+    </view>
+    <view class="room">{{electric.area}}{{electric.building}}{{electric.room}}</view>
+    <view class="card-item-bd">
+      <view class="card-info-hd">
+        <view class="card-info-left">
+          <text class="ykt-title">剩余电量：</text>
+        </view>
+        <view class="card-info-right">
+          <view>截至时间：{{year}}/{{month}}/{{date}}</view>
+        </view>
+      </view>
+      <view class="ykt-balance">
+        <text class="ykt-balance-value">{{electric.e_remind}}</text>
+        <text class="ykt-balance-text">度</text>
+      </view>
+    </view>
+    <navigator url="/pages/core/electric/electric">
+      <view class="card-item-open">
+        <text>查看详情</text>
+      </view>
+    </navigator>
+  </view>
+</view>

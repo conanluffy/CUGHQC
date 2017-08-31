@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="content">
+    <view class="content-bd" id="xueza">
+      <view class="title">学杂详情</view>
+      <view class="content-hd">
+        <view class="left">缴费项目</view>
+        <view class="middle1">缴费年</view>
+        <view class="middle">应缴金额</view>
+        <view class="right">实缴金额</view>
+      </view>
+      <view class="content-book" wx:for="{{xueza}}">
+        <view class="left">{{item.project}}</view>
+        <view class="middle1">{{item.year}}</view>
+        <view class="middle">{{item.e1}}</view>
+        <view class="right">{{item.e2}}</view>
+      </view>
+    </view>
+    <view class="content-bd" id="award">
+      <view class="title">奖助详情</view>
+      <view class="content-hd">
+        <view class="left">金额说明</view>
+        <view class="middle1">金额类型</view>
+        <view class="middle">发放时间</view>
+        <view class="right">发放金额</view>
+      </view>
+      <view class="content-book" wx:for="{{award}}">
+        <view class="left">{{item.why}}</view>
+        <view class="middle1">{{item.type}}</view>
+        <view class="middle">{{item.date}}</view>
+        <view class="right">{{item.e2}}</view>
+      </view>
+    </view>
+  </view>
+</view>

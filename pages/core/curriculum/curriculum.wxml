@@ -1,0 +1,492 @@
+<!--顶部选择周数区域-->
+<view class="top">
+    <picker bindchange="bindPickerChange" value="{{week-1}}" range="{{array}}" class="picker">
+            <view wx:if="{{array[week-1]}}" class="select_block">
+                第14周
+                <image src="/icon/down.png" style="width:36rpx;height:24rpx;"></image>
+            </view> 
+    </picker>
+</view>
+<scroll-view>
+	<view class="y y1">
+		<view class="x x1">
+			<view class="content">
+				<view class="content2">
+					<view class="view">5</view>
+					<view class="view2">月</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x2">
+			<view class="content">
+				<view class="content2">
+					<view class="view">周一</view>
+					<view class="view2">29日</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x3">
+			<view class="content">
+				<view class="content2">
+					<view class="view">周二</view>
+					<view class="view2">30日</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x4">
+			<view class="content">
+				<view class="content2">
+					<view class="view">周三</view>
+					<view class="view2">31日</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x5">
+			<view class="content">
+				<view class="content2">
+					<view class="view">周四</view>
+					<view class="view2">6月</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x6">
+			<view class="content">
+				<view class="content2">
+					<view class="view">周五</view>
+					<view class="view2">2日</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x7">
+			<view class="content" style="background-color:#b8ebfa">
+				<view class="content2">
+					<view class="view">周六</view>
+					<view class="view2">3日</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x8">
+			<view class="content">
+				<view class="content2">
+					<view class="view">周日</view>
+					<view class="view2">4日</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="y y2">
+		<view class="x x1">
+			<view class="content">
+				<view class="content2">
+					<view class="view">1</view>
+					<view class="view2">2</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x2">
+			<view class="content" style="background-color:#80cff8">
+				<view class="content2" >
+					<view class="view">大学英语1(ABC)@教二楼605</view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x3">
+			<view class="content" style="background-color:#d3aef4">
+				<view class="content2" >
+					<view class="view">线性代数A@综合楼402</view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x4">
+			<view class="content" style="background-color:#acbefe">
+				<view class="content2" >
+					<view class="view">高等数学A1@教三楼101</view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x5">
+			<view class="content" style="background-color:#d3aef4">
+				<view class="content2" >
+					<view class="view">线性代数A@综合楼402</view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x6">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x7">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x8">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="y y3">
+		<view class="x x1">
+			<view class="content">
+				<view class="content2">
+					<view class="view">3</view>
+					<view class="view2">4</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x2">
+			<view class="content" style="background-color:#acbefe">
+				<view class="content2" >
+					<view class="view">高等数学A1@教三楼101</view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x3">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x4">
+			<view class="content" style="background-color:#c1b5f3">
+				<view class="content2">
+					<view class="view">计算机高级语言程序设计（C）@教二楼406</view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x5">
+			<view class="content" style="background-color:#80cff8">
+				<view class="content2" >
+					<view class="view">大学英语1(ABC)@教三楼404</view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x6">
+			<view class="content" style="background-color:#acbefe">
+				<view class="content2" >
+					<view class="view">高等数学A1@教三楼101</view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x7">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x8">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="y y4">
+		<view class="x x1">
+			<view class="content">
+				<view class="content2">
+					<view class="view">5</view>
+					<view class="view2">6</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x2">
+			<view class="content" style="background-color:#c1b5f3">
+				<view class="content2">
+					<view class="view">计算机高级语言程序设计（C）@教二楼603</view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x3">
+			<view class="content" style="background-color:#e5a7f4">
+				<view class="content2">
+					<view class="view">体育1@西区田径场</view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x4">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x5">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x6">
+			<view class="content" style="background-color:#f9a6ec">
+				<view class="content2">
+					<view class="view">思想道德修养与法律基础1@教三楼201</view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x7">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x8">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="y y5">
+		<view class="x x1">
+			<view class="content">
+				<view class="content2">
+					<view class="view">7</view>
+					<view class="view2">8</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x2">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x3">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x4">
+			<view class="content" style="background-color:#faadcf">
+				<view class="content2">
+					<view class="view">心理学与自我成长@综合楼207</view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x5">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x6">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x7">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x8">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="y y6">
+		<view class="x x1">
+			<view class="content">
+				<view class="content2">
+					<view class="view">9</view>
+					<view class="view2">10</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x2">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x3">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x4">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x5">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x6">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x7">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x8">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="y y7">
+		<view class="x x1">
+			<view class="content">
+				<view class="content2">
+					<view class="view">11</view>
+					<view class="view2">12</view>
+				</view>
+			</view>
+		</view>
+		<view class="x x2">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x3">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x4">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x5">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x6">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x7">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+		<view class="x x8">
+			<view class="content">
+				<view class="content2">
+					<view class="view"></view>
+					<view class="view2"></view>
+				</view>
+			</view>
+		</view>
+	</view>
+</scroll-view>
+<!--<scroll-view class="form" scroll-x="true">
+    <view wx:for="{{form}}" wx:for-item="y" wx:for-index="numY" class="y y{{numY}}">
+        <view wx:for="{{y}}" wx:for-item="x" wx:for-index="numX" class="x x{{numX}} {{x.classInfo.ZJ}}" style="background:{{x.classInfo.bg}};">
+            <view>
+                <view wx:if="{{numY==0}}">
+                    {{x.view0}}
+                </view>
+                <view bindtap='showAll' data-view='{{x}}'>
+                    <view class="view">{{x.view}}</view>
+                    <view class="text2">{{x.text2}}</view>
+                </view>
+                <view wx:if="{{numX==0&&numY>0}}" class="classTime">
+                    <view class='classTime-block up'>{{2*numY-1}}</view>
+                    <view class='classTime-block down'>{{2*numY}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>-->

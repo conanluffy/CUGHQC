@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="wx-info">
+    <image class="wx-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <view class="wx-name">{{userInfo.nickName}}</view>
+  </view>
+  <view class="userInfo">
+    <view class="username">姓名<text>{{userData.username}}</text></view>
+    <view class="userid">学号<text>{{userData.userid}}</text></view>
+    <view class="sex">性别<text>{{userData.sex}}</text></view>
+    <view class="birth">出生日期<text>{{userData.birth}}</text></view>
+    <view class="nation">民族<text>{{userData.nation}}</text></view>
+    <view class="college">学院<text>{{userData.college}}</text></view>
+    <view class="major">专业<text>{{userData.major}}</text></view>
+    <view class="class">班级<text>{{userData.class}}</text></view>
+    <view class="tel" style="border: none;">电话号码<text>{{userData.tel}}</text></view>
+  </view>
+</view>

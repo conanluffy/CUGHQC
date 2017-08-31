@@ -1,0 +1,55 @@
+<view class="container">
+  <view class="result-page">
+    <!--result-userInfo-->
+    <view class="result-userInfo result-model">
+      <view class="userInfo-dormitory">
+        <text class="dormitory-info">{{electric.area}}{{electric.building}}{{electric.room}}寝室</text>
+        <view open-type="redirect" bindtap="bind" class="dormitory-resetBtn">修改寝室</view>
+      </view>
+      <view class="userInfo-basic">
+        <text class="basic-name">{{username}}（{{userid}}）</text>
+        <text class="basic-time">截至时间：{{time.year}}/{{time.month}}/{{time.date}}</text>
+      </view>
+    </view>
+    <view class="changeRoom" wx:if="{{change}}">北区25栋
+    <view id="room"><input type="number" cursor-spacing="30" maxlength="3" placeholder="请输入寝室号" bindinput="roomInput" /></view>
+    <text bindtap="bind2" class="dormitory-resetBtn" style="margin-left:355rpx;">确认修改</text>
+    </view>
+    <!--result-chargeInfo-->
+    <view class="result-chargeInfo">
+      <view class="chargeInfo-num chargeInfo-model result-model">
+        <text class="chargeInfo-model-title">当月用电</text>
+        <view class="chargeInfo-model-info">
+          <text class="model-info">{{electric.e_used}}</text>度
+        </view>
+      </view>
+      <view class="chargeInfo-cost chargeInfo-model result-model">
+
+        <text class="chargeInfo-model-title">剩余电量</text>
+        <view class="chargeInfo-model-info">
+          <text class="model-info">{{electric.e_remind}}</text>度
+        </view>
+
+      </view>
+    </view>
+    <!--result-specificInfo-->
+    <view class="result-specificInfo result-model">
+      <view class="specificInfo-item">
+        <text class="specificInfo-item-label">电起度</text>
+        <text class="specificInfo-item-value">{{electric.e_remind*5}}</text>
+        <text>度</text>
+      </view>
+      <view class="specificInfo-item">
+        <text class="specificInfo-item-label">电止度</text>
+        <text class="specificInfo-item-value">{{elec_end}}</text>
+        <text>度</text>
+      </view>
+      <view class="specificInfo-item">
+        <text class="specificInfo-item-label">每月免费电量</text>
+        <text class="specificInfo-item-value">30</text>
+        <text>度</text>
+      </view>
+    </view>
+    <!--<image class="sdf-bg" src="/images/core/sdf/sdf-bg.png"></image>-->
+  </view>
+</view>

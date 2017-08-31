@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/discovery/discovery",
+    "pages/discovery/detail/detail",
+
+    "pages/more/more",
+    "pages/more/me/me",
+    "pages/more/login/login",
+    "pages/more/issues/issues",
+    "pages/more/about/about",
+    "pages/more/set/set",
+    
+    "pages/core/curriculum/curriculum",
+    "pages/core/grade/grade",
+    "pages/core/exam/exam",
+    "pages/core/library/library",
+    "pages/core/campusCard/campusCard",
+    "pages/core/net/net",
+    "pages/core/electric/electric",
+    "pages/core/finance/finance"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTextStyle":"#fff",
+    "navigationBarTitleText": "CUG",
+    "backgroundColor":"#333",
+    "backgroundTextStyle":"dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "gray",
+    "selectedColor":"black",
+    "backgroundColor": "white",
+    "borderStyle":"black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"icon/index.png",
+      "selectedIconPath":"icon/indexChose.png"
+    }, {
+      "pagePath": "pages/discovery/discovery",
+      "text": "资讯",
+      "iconPath":"icon/discovery.png",
+      "selectedIconPath":"icon/discoveryChose.png"
+    },{
+      "pagePath": "pages/more/more",
+      "text": "更多",
+      "iconPath":"icon/my.png",
+      "selectedIconPath":"icon/myChose.png"
+    } 
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 1000
+  },
+  "debug": false
+}
