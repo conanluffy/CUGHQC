@@ -6,8 +6,4 @@
 ### 部分效果图
 ![Image text](https://github.com/conanluffy/CUGHQC/blob/master/img/4-2.jpg)
 
-![Image text](https://github.com/conanluffy/CUGHQC/blob/master/img/4-3.jpg)
-
-![Image text](https://github.com/conanluffy/CUGHQC/blob/master/img/4-9.jpg)
-
 ![Image text](https://github.com/conanluffy/CUGHQC/blob/master/img/4-15.jpg)
